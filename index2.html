@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixoConvert</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-animation"></div>
+
+    <div class="container">
+        <div class="title-box">
+            <h1>PixoConvert</h1>
+            <p>Your one-stop solution for multi-format image conversion.</p>
+        </div>
+
+        <div class="upload-container">
+            <div id="drop-area" class="drop-area">
+                <p>Drag & Drop up to 10 images here</p>
+                <p class="or">or</p>
+                <input type="file" id="fileInput" accept="image/*" multiple hidden>
+                <label for="fileInput" class="upload-button">Select Files</label>
+            </div>
+            <div id="file-list-container" class="file-list-container">
+                <ul id="file-list"></ul>
+            </div>
+        </div>
+
+        <div class="conversion-options">
+            <div class="option-box" data-format="zip">
+                <div class="shine"></div>
+                <h3>ZIP</h3>
+                <p>Compressed Archive</p>
+            </div>
+            <div class="option-box" data-format="pdf">
+                <div class="shine"></div>
+                <h3>PDF</h3>
+                <p>Multi-page Document</p>
+            </div>
+            <div class="option-box" data-format="docx">
+                <div class="shine"></div>
+                <h3>Word (DOCX)</h3>
+                <p>Embedded Images</p>
+            </div>
+            <div class="option-box" data-format="gif">
+                <div class="shine"></div>
+                <h3>GIF</h3>
+                <p>Animated GIF</p>
+            </div>
+            <div class="option-box image-formats-box">
+                <div class="shine"></div>
+                <h3>Image Formats</h3>
+                <p>Convert to JPEG, PNG, WebP, BMP, TIFF</p>
+                <div class="format-list">
+                    <button class="format-btn" data-format="jpeg">JPEG</button>
+                    <button class="format-btn" data-format="png">PNG</button>
+                    <button class="format-btn" data-format="webp">WebP</button>
+                    <button class="format-btn" data-format="bmp">BMP</button>
+                    <button class="format-btn" data-format="tiff">TIFF</button>
+                </div>
+            </div>
+        </div>
+
+        <button id="convert-button" class="convert-button" disabled>Convert Images</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
